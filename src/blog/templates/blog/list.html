@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+
+{% block head_title %}
+Blogs -
+{% endblock head_title  %}
+
+{% block content %}
+
+	<div class='row'>
+	{% for object in object_list %}
+		{% include 'blog/list_inline.html' with blog_post=object truncate=True detail=False %}
+		<!-- must include 'with' in above statement -->
+	{% endfor %}
+	</div>
+
+{% endblock content %}
