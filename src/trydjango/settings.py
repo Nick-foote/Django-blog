@@ -25,7 +25,10 @@ SECRET_KEY = '0*u@5$686%jpd7f&)k0lm(f$oif&m(2q#t!vcwa0*+g(&p9om$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['35.178.110.25']
+ALLOWED_HOSTS = [
+    '35.178.110.25',
+    'nickfoote.pythonanywhere.com',
+]
 
 LOGIN_URL = '/login'
 
