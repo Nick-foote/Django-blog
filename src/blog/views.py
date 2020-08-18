@@ -47,7 +47,7 @@ def blog_post_create_view(request):
 	return render(request, template_name, context)
 
 
-@staff_member_required
+# @staff_member_required - allows guest users to view
 def blog_post_detail_view(request, slug):
 	# 1 object or detail view
 	obj = get_object_or_404(BlogPost, slug=slug)

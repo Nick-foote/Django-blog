@@ -1,14 +1,22 @@
 {% extends "base.html" %}
 
 {% block head_title %}
-Home -
+Home
 {% endblock head_title  %}
 
 
 {% block content %}
 
-<h1>{{ title }}</h1>
+<!-- <h1>{{ title }}</h1> -->
 
+	<div><br/>
+		<h1> Welcome to my Django homepage</h1><br/>
+
+		<p>Project codes are stored on my <a href="https://github.com/Nick-foote?tab=repositories">Github Account </a></p>
+	<div>
+		<p> Most recent programs I've worked on below, visit 'Project Blog' above for more projects</p>
+	</div>
+	</div>
 
 {% for a in blog_list %}
 	{% include 'blog/list_inline.html' with blog_post=a truncate=True detail=False%}

@@ -23,7 +23,7 @@ class BlogPostQuerySet(models.QuerySet):
 					Q(user__last_name__icontains=query) |
 					Q(user__username__icontains=query)
 					)
-
+		
 		return self.filter(lookup)
 
 
